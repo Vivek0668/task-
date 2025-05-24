@@ -194,6 +194,21 @@ body {
     text-align: center;
   }
 
+  .promo-banner{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .promo-banner .content{
+    flex-wrap: wrap;
+ justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+  }
+
   .hero_buttons {
     justify-content: center;
   }
@@ -533,29 +548,47 @@ body {
 .load-more {
   text-align: center;
   margin: 2rem;
+  
 }
 
 .load-more button {
+  margin-bottom: 5rem;
+  margin-top : 2rem;
   padding: 0.8rem 2rem;
-  background: #FFB6B9;
+  background: #28293E;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  color: #000;
+  color: #ffff;
   font-weight: bold;
+  border: 2px solid #FFFFFF4B
+}
+
+.load-more button:hover {
+  border: 2px solid purple
 }
 
 
 
-.promo-banner .container {
- background-color: #28293E;
+.promo-banner .content {
+  
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
+ .promo-left {
+  flex : 1,1,50%;
+ }
+
+ .promo-right {
+  flex : 1,1,50%;
+ }
+ 
 
 .promo-left h3 {
+
   font-size: 2rem;
 }
 
@@ -570,13 +603,21 @@ body {
 }
 
 .promo-right img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
+   flex-direction: row;
+   flex : 1,1,50%;
 }
 
 .team-section {
+  position : relative;
   background-color: #1C1C2C;
+  margin : 3rem 0;
+  padding : 3rem 0;
+  padding-bottom: 12rem;
+}
+.pins {
+  position : absolute;
+  right: 56rem;
+  bottom : 5rem;
 }
 
 .team-grid {
@@ -598,15 +639,17 @@ body {
 .name {
   font-weight: bold;
   font-size: 1.1rem;
+  color: #FFFFFF;
 }
 
 .role {
-  color: #aaa;
+  color: #FFFFFFA3;
 }
 
 
 
 .promo-banner {
+  display: flex;
   background-color: #fef1eb;
   padding: 2rem;
   border-radius: 1rem;
@@ -615,6 +658,8 @@ body {
   width: 1170px;
   overflow: hidden;
   margin: 2rem auto;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .content {
   position: relative;
@@ -961,8 +1006,22 @@ body {
   font-size: 14px;
 }
 
+.Latest {
+  color : #FFFFFF
+}
+
+.team{
+  color : #EF6D58;
+
+}
+.team-section h2{
+  color : #FFFFFF;
+}
 
 
+@mediaQueris() {
+
+}
 
 
 
